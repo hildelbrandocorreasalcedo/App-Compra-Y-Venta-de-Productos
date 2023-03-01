@@ -1,16 +1,34 @@
-2023/02/28-13:58:00.469 6308 Reusing MANIFEST C:\Users\n\AppData\Local\Temp\flutter_tools.d11d7eea\flutter_tools_chrome_device.bb939293\Default\Session Storage/MANIFEST-000001
-2023/02/28-13:58:00.471 6308 Recovering log #27
-2023/02/28-13:58:00.477 6308 Reusing old log C:\Users\n\AppData\Local\Temp\flutter_tools.d11d7eea\flutter_tools_chrome_device.bb939293\Default\Session Storage/000027.log 
-2023/02/28-13:58:00.486 6308 Delete type=2 #3
-2023/02/28-13:58:00.486 6308 Delete type=0 #3
-2023/02/28-13:58:00.486 6308 Delete type=0 #4
-2023/02/28-13:58:00.486 6308 Delete type=0 #6
-2023/02/28-13:58:00.486 6308 Delete type=2 #7
-2023/02/28-13:58:00.486 6308 Delete type=0 #11
-2023/02/28-13:58:00.486 6308 Delete type=2 #13
-2023/02/28-13:58:00.486 6308 Delete type=2 #15
-2023/02/28-13:58:00.487 6308 Delete type=0 #16
-2023/02/28-13:58:00.487 6308 Delete type=2 #18
-2023/02/28-13:58:00.487 6308 Delete type=0 #20
-2023/02/28-13:58:00.487 6308 Delete type=2 #21
-2023/02/28-13:58:00.487 6308 Delete type=0 #23
+2023/03/01-09:08:14.097 5998 Reusing MANIFEST C:\Users\n\AppData\Local\Temp\flutter_tools.6310165\flutter_tools_chrome_device.35d152a0\Default\Session Storage/MANIFEST-000001
+2023/03/01-09:08:14.099 5998 Recovering log #27
+2023/03/01-09:08:14.100 5998 Reusing old log C:\Users\n\AppData\Local\Temp\flutter_tools.6310165\flutter_tools_chrome_device.35d152a0\Default\Session Storage/000027.log 
+2023/03/01-09:08:14.101 5998 Delete type=2 #3
+2023/03/01-09:08:14.101 5998 Delete type=0 #3
+2023/03/01-09:08:14.101 5998 Delete type=0 #4
+2023/03/01-09:08:14.101 5998 Delete type=0 #6
+2023/03/01-09:08:14.101 5998 Delete type=2 #7
+2023/03/01-09:08:14.101 5998 Delete type=0 #11
+2023/03/01-09:08:14.101 5998 Delete type=2 #13
+2023/03/01-09:08:14.102 5998 Delete type=2 #15
+2023/03/01-09:08:14.102 5998 Delete type=0 #16
+2023/03/01-09:08:14.102 5998 Delete type=2 #18
+2023/03/01-09:08:14.102 5998 Delete type=0 #20
+2023/03/01-09:08:14.102 5998 Delete type=2 #21
+2023/03/01-09:08:14.102 5998 Delete type=0 #23
+2023/03/01-10:02:01.775 5384 Level-0 table #31: started
+2023/03/01-10:02:01.785 5384 Level-0 table #31: 600446 bytes OK
+2023/03/01-10:02:01.787 5384 Delete type=0 #27
+2023/03/01-10:41:21.675 5998 Level-0 table #33: started
+2023/03/01-10:41:21.690 5998 Level-0 table #33: 528616 bytes OK
+2023/03/01-10:41:21.693 5998 Delete type=0 #30
+2023/03/01-10:42:07.441 4ec0 Level-0 table #35: started
+2023/03/01-10:42:07.447 4ec0 Level-0 table #35: 396032 bytes OK
+2023/03/01-10:42:07.448 4ec0 Delete type=0 #32
+2023/03/01-10:42:07.449 4ec0 Compacting 4@0 + 1@1 files
+2023/03/01-10:42:07.470 4ec0 Generated table #36@0: 30 keys, 924995 bytes
+2023/03/01-10:42:07.470 4ec0 Compacted 4@0 + 1@1 files => 924995 bytes
+2023/03/01-10:42:07.471 4ec0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/03/01-10:42:07.472 4ec0 Delete type=2 #25
+2023/03/01-10:42:07.472 4ec0 Delete type=2 #28
+2023/03/01-10:42:07.472 4ec0 Delete type=2 #31
+2023/03/01-10:42:07.472 4ec0 Delete type=2 #33
+2023/03/01-10:42:07.472 4ec0 Delete type=2 #35

@@ -1,3 +1,5 @@
-2023/02/24-13:00:35.709 10d4 Reusing MANIFEST C:\Users\n\AppData\Local\Temp\flutter_tools.e9d5d450\flutter_tools_chrome_device.b7cc754a\Default\EntityExtractionAssetStore.db/MANIFEST-000001
-2023/02/24-13:00:35.712 10d4 Recovering log #3
-2023/02/24-13:00:35.718 10d4 Reusing old log C:\Users\n\AppData\Local\Temp\flutter_tools.e9d5d450\flutter_tools_chrome_device.b7cc754a\Default\EntityExtractionAssetStore.db/000003.log 
+2023/04/19-20:04:32.771 154c Reusing MANIFEST C:\Users\n\AppData\Local\Temp\flutter_tools.56d74cc\flutter_tools_chrome_device.38bec433\Default\EntityExtractionAssetStore.db/MANIFEST-000001
+2023/04/19-20:04:32.773 154c Recovering log #7
+2023/04/19-20:04:32.781 154c Reusing old log C:\Users\n\AppData\Local\Temp\flutter_tools.56d74cc\flutter_tools_chrome_device.38bec433\Default\EntityExtractionAssetStore.db/000007.log 
+2023/04/19-20:04:32.782 154c Delete type=0 #3
+2023/04/19-20:04:32.782 154c Delete type=0 #4

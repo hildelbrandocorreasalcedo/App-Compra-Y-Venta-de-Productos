@@ -1,11 +1,8 @@
-// ignore_for_file: prefer_const_constructors
-import 'package:flutter/src/material/input_decorator.dart';
-import 'package:best_parking_app_firebase/pages/Administrador/inicioAdmin.dart';
-import 'package:best_parking_app_firebase/pages/Cliente/inicioCliente.dart';
+import 'package:best_parking_app_firebase/pages/Admin/inicioAdmin.dart';
+import 'package:best_parking_app_firebase/pages/Client/inicioCliente.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../peticiones/usuariohttp.dart';
+import '../peticiones/peticionesLogin.dart';
 
 class Login extends StatefulWidget {
   @override

@@ -62,7 +62,7 @@ class _LoginState extends State<Login> {
               ),
               Text(''),
               Text(
-                'SHOPYA',
+                'Flast Food',
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 25,

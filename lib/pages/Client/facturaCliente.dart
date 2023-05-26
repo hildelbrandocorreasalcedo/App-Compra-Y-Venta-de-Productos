@@ -1,11 +1,7 @@
-import 'dart:html';
-
 import 'package:best_parking_app_firebase/pages/login.dart';
-import 'package:best_parking_app_firebase/peticiones/peticionesProducto.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import '../../peticiones/peticionesCompraTemp.dart';
-import 'detallesProductoCliente.dart';
 
 class FacturaCliente extends StatefulWidget {
   FacturaCliente();

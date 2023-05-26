@@ -1,8 +1,6 @@
-import 'package:best_parking_app_firebase/pages/Admin/detallesProductoAdmin.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../Client/consultarFinanzas.dart';
 import 'ingresoProductoAdmin.dart';
 import '../login.dart';
 import 'listaProductoAdmin.dart';
@@ -43,14 +41,14 @@ class _inicioAdminState extends State<inicioAdmin> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-            /*title: Text(
-              'GESTION DE PARQUEOS',
+            title: Text(
+              'Flast Food',
               style: TextStyle(
-                color: Colors.black,
-                fontSize: 22,
+                color: Colors.white,
+                fontSize: 30,
               ),
-            ),*/
-            title: Image.asset('img/Icono.png', scale: 22),
+            ),
+            //title: Image.asset('img/icono.png', scale: 15),
             leading: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

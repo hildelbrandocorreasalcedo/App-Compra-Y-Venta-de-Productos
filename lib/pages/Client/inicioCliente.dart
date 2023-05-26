@@ -1,6 +1,4 @@
-import 'package:best_parking_app_firebase/modelos/compraTemp.dart';
 import 'package:best_parking_app_firebase/pages/Client/compraTempCliente.dart';
-import 'package:best_parking_app_firebase/pages/Client/consultarFinanzas.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '../login.dart';
@@ -39,14 +37,14 @@ class _inicioClienteState extends State<inicioCliente> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-            /*title: Text(
-              'GESTION DE PARQUEOS',
+            title: Text(
+              'Flast Food',
               style: TextStyle(
-                color: Colors.black,
-                fontSize: 22,
+                color: Colors.white,
+                fontSize: 30,
               ),
-            ),*/
-            title: Image.asset('img/Icono.png', scale: 22),
+            ),
+            //title: Image.asset('img/icono.png', scale: 15),
             leading: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

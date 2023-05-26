@@ -1,0 +1,4 @@
+#Thu May 25 19:17:50 COT 2023
+base.0=C\:\\Users\\n\\OneDrive\\Documentos\\GitHub\\MOVIL-FLUTTER\\App-Compra-Y-Venta-de-Productos\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

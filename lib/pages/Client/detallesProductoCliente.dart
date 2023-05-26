@@ -1,10 +1,7 @@
-import 'dart:convert';
-//import 'dart:ffi';
 import 'package:best_parking_app_firebase/pages/login.dart';
 import 'package:best_parking_app_firebase/peticiones/peticionesCompraTemp.dart';
 import 'package:best_parking_app_firebase/peticiones/peticionesProducto.dart';
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 class detallesProductoCliente extends StatefulWidget {
   final iddoc;

@@ -11,9 +11,6 @@ class FacturaCliente extends StatefulWidget {
 }
 
 class _FacturaClienteState extends State<FacturaCliente> {
-  @override
-  void initState() {}
-
   int totalPagar = 0;
   final List listaPagar = [];
 
@@ -24,7 +21,7 @@ class _FacturaClienteState extends State<FacturaCliente> {
         home: Scaffold(
           appBar: AppBar(
               /*title: Text(
-              'GESTION DE PARQUEOS',
+             'Factura del Cliente',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 22,

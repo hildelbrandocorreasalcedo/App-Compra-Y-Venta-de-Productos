@@ -64,7 +64,7 @@ class _inicioAdminState extends State<inicioAdmin> {
                     iconSize: 25,
                     icon: const Icon(Icons.home),
                     color: Colors.blue.shade400,
-                    tooltip: 'Salir',
+                    tooltip: 'Regresar',
                     onPressed: () {
                       setState(() {
                         Navigator.pop(context);

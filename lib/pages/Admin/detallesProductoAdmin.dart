@@ -47,14 +47,14 @@ class _detallesProductoState extends State<detallesProducto> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-          /*title: Text(
-              'GESTION DE PARQUEOS',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 22,
-              ),
-            ),*/
-          title: Image.asset('img/Icono.png', scale: 22),
+          title: Text(
+            'Flast Food',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
+            ),
+          ),
+          //title: Image.asset('img/icono.png', scale: 22),
           leading: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -69,7 +69,7 @@ class _detallesProductoState extends State<detallesProducto> {
                   iconSize: 25,
                   icon: const Icon(Icons.home),
                   color: Colors.blue.shade400,
-                  tooltip: 'Salir',
+                  tooltip: 'Regresar',
                   onPressed: () {
                     setState(() {
                       Navigator.pop(context);

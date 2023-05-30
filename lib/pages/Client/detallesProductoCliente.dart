@@ -76,14 +76,14 @@ class _detallesProductoClienteState extends State<detallesProductoCliente> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-          /*title: Text(
-              'GESTION DE PARQUEOS',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 22,
-              ),
-            ),*/
-          title: Image.asset('img/Icono.png', scale: 22),
+          title: Text(
+            'Flast Food',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
+            ),
+          ),
+          //title: Image.asset('img/icono.png', scale: 22),
           leading: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -98,7 +98,7 @@ class _detallesProductoClienteState extends State<detallesProductoCliente> {
                   iconSize: 25,
                   icon: const Icon(Icons.home),
                   color: Colors.blue.shade400,
-                  tooltip: 'Salir',
+                  tooltip: 'regresar',
                   onPressed: () {
                     setState(() {
                       Navigator.pop(context);
@@ -366,18 +366,12 @@ class _detallesProductoClienteState extends State<detallesProductoCliente> {
               },
             ),
           ),
-          //////////////////////////////////////////////////////////////////////////////
-          ///
         ],
       ),
     );
   }
 
   calculosDeCompra() {
-    var producto = controlAlimento.text;
-    var cantidad = _counter;
-    var valorProducto = controlValorAlimento;
-
     var compraTemp = <String, dynamic>{
       'producto': controlAlimento.text,
       'cantidad': _counter.toString(),

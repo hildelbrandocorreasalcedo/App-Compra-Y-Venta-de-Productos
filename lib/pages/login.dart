@@ -94,7 +94,15 @@ class _LoginState extends State<Login> {
                     minimumSize: Size(double.infinity, 50),
                   ),
                   onPressed: () {
-                    if (usuario.text == 'Admin' && clave.text == '1234') {
+                    if (usuario.text == '' && clave.text == '') {
+                      showDialog(
+                          context: context,
+                          builder: (_) => AlertDialog(
+                                content: Text(
+                                    'Campos vacios, debe ingresar credenciales'),
+                              ));
+                    } else if (usuario.text == 'Admin' &&
+                        clave.text == '1234') {
                       Navigator.push(
                           context,
                           MaterialPageRoute(

@@ -1,43 +1,40 @@
 import 'package:best_parking_app_firebase/pages/login.dart';
 import 'package:flutter/material.dart';
 
+import '../../peticiones/peticionesProducto.dart';
+
 class detallesProducto extends StatefulWidget {
   final iddoc;
   final pos;
   final List perfil;
   detallesProducto({required this.perfil, this.pos, this.iddoc});
 
-  /*final idperfil;
-  final List<dynamic> perfil;
-  RetirarVehiculo({required this.perfil, this.idperfil});*/
-
   @override
   _detallesProductoState createState() => _detallesProductoState();
 }
 
 class _detallesProductoState extends State<detallesProducto> {
-  TextEditingController controlAlimento = TextEditingController();
-  TextEditingController controlCantidadProducto = TextEditingController();
-  TextEditingController controlEstado = TextEditingController();
   TextEditingController controlTipo = TextEditingController();
+  TextEditingController controlAlimento = TextEditingController();
   TextEditingController controlValorAlimento = TextEditingController();
+  TextEditingController controlCantidadProducto = TextEditingController();
   TextEditingController controlFoto = TextEditingController();
+  TextEditingController controlEstado = TextEditingController();
 
   @override
   void initState() {
-    controlAlimento =
-        TextEditingController(text: widget.perfil[widget.pos]['alimento']);
-    controlCantidadProducto = TextEditingController(
-        text: widget.perfil[widget.pos]['cantidadProducto']);
-    controlEstado =
-        TextEditingController(text: widget.perfil[widget.pos]['estado']);
     controlTipo =
         TextEditingController(text: widget.perfil[widget.pos]['tipo']);
+    controlAlimento =
+        TextEditingController(text: widget.perfil[widget.pos]['alimento']);
     controlValorAlimento =
         TextEditingController(text: widget.perfil[widget.pos]['valoralimento']);
+    controlCantidadProducto = TextEditingController(
+        text: widget.perfil[widget.pos]['cantidadProducto']);
     controlFoto =
         TextEditingController(text: widget.perfil[widget.pos]['foto']);
-
+    controlEstado =
+        TextEditingController(text: widget.perfil[widget.pos]['estado']);
     // TODO: implement initState
     super.initState();
   }
@@ -48,7 +45,7 @@ class _detallesProductoState extends State<detallesProducto> {
     return Scaffold(
       appBar: AppBar(
           title: Text(
-            'Flast Food',
+            'Fast Food',
             style: TextStyle(
               color: Colors.white,
               fontSize: 30,
@@ -124,11 +121,16 @@ class _detallesProductoState extends State<detallesProducto> {
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(
-              36,
-              10,
-              36,
-              0,
+            padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
+            child: Text(
+              "Detalles del producto",
+              textAlign: TextAlign.center,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 25,
+                fontFamily: 'Prompt',
+              ),
             ),
           ),
           /////////////////////////////////////////////////////////7
@@ -167,7 +169,7 @@ class _detallesProductoState extends State<detallesProducto> {
                                 color: Colors.blue[200],
                                 child: Center(
                                   child: Text(
-                                    controlAlimento.text,
+                                    controlTipo.text,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.ellipsis,
                                     style: const TextStyle(
@@ -188,49 +190,143 @@ class _detallesProductoState extends State<detallesProducto> {
                                   padding: const EdgeInsets.only(top: 100),
                                   child: Column(
                                     children: [
-                                      Text(
-                                        'Valor Unitario:\n' +
-                                            controlValorAlimento.text,
-                                        textAlign: TextAlign.center,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15,
-                                          fontFamily: 'Prompt',
+                                      Container(
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 30.0),
+                                        child: TextField(
+                                          cursorColor: Colors.red.shade400,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 15,
+                                            fontFamily: 'Prompt',
+                                          ),
+                                          controller: controlAlimento,
+                                          decoration: InputDecoration(
+                                              icon:
+                                                  Icon(Icons.text_fields_sharp),
+                                              labelText: 'Alimento'),
+                                          onChanged: (value) {},
                                         ),
                                       ),
-                                      Text(
-                                        '\nEstado:\n' + controlEstado.text,
-                                        textAlign: TextAlign.center,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15,
-                                          fontFamily: 'Prompt',
+                                      SizedBox(
+                                        height: 10.0,
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 30.0),
+                                        child: TextField(
+                                          cursorColor: Colors.red.shade400,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 15,
+                                            fontFamily: 'Prompt',
+                                          ),
+                                          controller: controlValorAlimento,
+                                          decoration: InputDecoration(
+                                              icon:
+                                                  Icon(Icons.text_fields_sharp),
+                                              labelText: 'Valor Alimento'),
+                                          onChanged: (value) {},
                                         ),
                                       ),
-                                      Text(
-                                        '\nCantidad Disponible:\n' +
-                                            controlCantidadProducto.text,
-                                        textAlign: TextAlign.center,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15,
-                                          fontFamily: 'Prompt',
+                                      SizedBox(
+                                        height: 10.0,
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 30.0),
+                                        child: TextField(
+                                          cursorColor: Colors.red.shade400,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 15,
+                                            fontFamily: 'Prompt',
+                                          ),
+                                          controller: controlCantidadProducto,
+                                          decoration: InputDecoration(
+                                              icon:
+                                                  Icon(Icons.text_fields_sharp),
+                                              labelText:
+                                                  'Cantidad de productos'),
+                                          onChanged: (value) {},
                                         ),
                                       ),
-                                      Text(
-                                        '\nTipo:\n' + controlTipo.text,
-                                        textAlign: TextAlign.center,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15,
-                                          fontFamily: 'Prompt',
+                                      SizedBox(
+                                        height: 10.0,
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 30.0),
+                                        child: TextField(
+                                          cursorColor: Colors.red.shade400,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 15,
+                                            fontFamily: 'Prompt',
+                                          ),
+                                          controller: controlFoto,
+                                          decoration: InputDecoration(
+                                              icon:
+                                                  Icon(Icons.text_fields_sharp),
+                                              labelText: 'Foto del producto'),
+                                          onChanged: (value) {},
                                         ),
+                                      ),
+                                      SizedBox(
+                                        height: 10.0,
                                       ),
                                       Text(''),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          const SizedBox(width: 16),
+                                          FloatingActionButton.extended(
+                                            onPressed: () {
+                                              var producto = <String, dynamic>{
+                                                'alimento':
+                                                    controlAlimento.text,
+                                                'valoralimento':
+                                                    controlValorAlimento.text,
+                                                'estado': controlEstado.text,
+                                                'cantidadProducto':
+                                                    controlCantidadProducto
+                                                        .text,
+                                                'tipo': controlTipo.text,
+                                                'foto': controlFoto.text,
+                                              };
+                                              PeticionesProducto
+                                                  .actualizarProducto(
+                                                      widget.perfil[widget.pos]
+                                                          .id,
+                                                      producto);
+                                              Navigator.of(context).pop();
+                                            },
+                                            label: const Text(
+                                                'Actualizar Producto'),
+                                            icon: const Icon(Icons.update),
+                                          ),
+                                        ],
+                                      ),
+                                      Text(''),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          const SizedBox(width: 16),
+                                          FloatingActionButton.extended(
+                                            onPressed: () {
+                                              PeticionesProducto
+                                                  .eliminarProducto(widget
+                                                      .perfil[widget.pos].id);
+                                              Navigator.of(context).pop();
+                                            },
+                                            label:
+                                                const Text('Eliminar Producto'),
+                                            icon: const Icon(Icons.delete),
+                                          ),
+                                        ],
+                                      ),
                                       Text(''),
                                     ],
                                   ),

@@ -1,4 +1,4 @@
-#Tue May 30 13:36:47 COT 2023
+#Tue May 30 18:55:56 COT 2023
 base.2=C\:\\Users\\n\\OneDrive\\Documentos\\GitHub\\MOVIL-FLUTTER\\App-Compra-Y-Venta-de-Productos\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
 path.2=classes3.dex
 base.1=C\:\\Users\\n\\OneDrive\\Documentos\\GitHub\\MOVIL-FLUTTER\\App-Compra-Y-Venta-de-Productos\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex

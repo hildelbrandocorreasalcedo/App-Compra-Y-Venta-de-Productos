@@ -20,14 +20,14 @@ class _FacturaClienteState extends State<FacturaCliente> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
-              /*title: Text(
-             'Factura del Cliente',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 22,
+              title: Text(
+                'Factura del Cliente',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 25,
+                ),
               ),
-            ),*/
-              title: Image.asset('img/Icono.png', scale: 22),
+              //title: Image.asset('img/icono.png', scale: 22),
               leading: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -43,7 +43,7 @@ class _FacturaClienteState extends State<FacturaCliente> {
                       iconSize: 25,
                       icon: const Icon(Icons.home),
                       color: Colors.blue.shade400,
-                      tooltip: 'Salir',
+                      tooltip: 'Regresar',
                       onPressed: () {
                         setState(() {
                           Navigator.pop(context);

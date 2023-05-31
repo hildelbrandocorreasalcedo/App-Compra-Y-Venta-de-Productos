@@ -12,13 +12,13 @@ class AgregarProducto extends StatefulWidget {
 }
 
 class _AgregarProductoState extends State<AgregarProducto> {
-  TextEditingController controltipo = TextEditingController();
-  TextEditingController controlalimento = TextEditingController();
-  TextEditingController controlvaloralimento = TextEditingController();
-  TextEditingController controlcantidadProducto = TextEditingController();
-  TextEditingController controlfoto = TextEditingController();
-  TextEditingController controltotalpagar = TextEditingController();
-  TextEditingController controlestado = TextEditingController();
+  TextEditingController controlTipo = TextEditingController();
+  TextEditingController controlAlimento = TextEditingController();
+  TextEditingController controlValorAlimento = TextEditingController();
+  TextEditingController controlCantidadProducto = TextEditingController();
+  TextEditingController controlFoto = TextEditingController();
+  TextEditingController controlTotalPagar = TextEditingController();
+  TextEditingController controlEstado = TextEditingController();
 
   String selectedValue1 = 'Tipo Alimento';
   String seleccionado_1 = "";
@@ -57,7 +57,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                   onChanged: (String? newValue) {
                     setState(() {
                       selectedValue1 = newValue!;
-                      controltipo.text = newValue;
+                      controlTipo.text = newValue;
                     });
                   },
                   items: <String>['Tipo Alimento', 'COMIDA', 'BEBIDA']
@@ -70,7 +70,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                 ),
               ),
               SizedBox(
-                height: 15.0,
+                height: 10.0,
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -81,7 +81,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                     fontSize: 15,
                     fontFamily: 'Prompt',
                   ),
-                  controller: controlalimento,
+                  controller: controlAlimento,
                   decoration: InputDecoration(
                       icon: Icon(Icons.text_fields_sharp),
                       labelText: 'Alimento'),
@@ -89,7 +89,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                 ),
               ),
               SizedBox(
-                height: 15.0,
+                height: 10.0,
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -100,7 +100,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                     fontSize: 15,
                     fontFamily: 'Prompt',
                   ),
-                  controller: controlvaloralimento,
+                  controller: controlValorAlimento,
                   decoration: InputDecoration(
                       icon: Icon(Icons.text_fields_sharp),
                       labelText: 'Valor Alimento'),
@@ -108,7 +108,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                 ),
               ),
               SizedBox(
-                height: 15.0,
+                height: 10.0,
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -119,7 +119,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                     fontSize: 15,
                     fontFamily: 'Prompt',
                   ),
-                  controller: controlcantidadProducto,
+                  controller: controlCantidadProducto,
                   decoration: InputDecoration(
                       icon: Icon(Icons.text_fields_sharp),
                       labelText: 'Cantidad de productos'),
@@ -127,7 +127,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                 ),
               ),
               SizedBox(
-                height: 15.0,
+                height: 10.0,
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -138,7 +138,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                     fontSize: 15,
                     fontFamily: 'Prompt',
                   ),
-                  controller: controlfoto,
+                  controller: controlFoto,
                   decoration: InputDecoration(
                       icon: Icon(Icons.text_fields_sharp),
                       labelText: 'Foto del producto'),
@@ -146,7 +146,7 @@ class _AgregarProductoState extends State<AgregarProducto> {
                 ),
               ),
               SizedBox(
-                height: 15.0,
+                height: 10.0,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 15.0),
@@ -155,18 +155,18 @@ class _AgregarProductoState extends State<AgregarProducto> {
                   height: 60.0,
                   onPressed: () {
                     if (selectedValue1.toString() != 'Tipo Alimento' &&
-                        controltipo.text.isNotEmpty) {
-                      var cliente = <String, dynamic>{
+                        controlTipo.text.isNotEmpty) {
+                      var producto = <String, dynamic>{
                         'tipo': selectedValue1.toString(),
-                        'alimento': controlalimento.text,
-                        'valoralimento': controlvaloralimento.text,
-                        'cantidadProducto': controlcantidadProducto.text,
-                        'foto': controlfoto.text,
-                        'estado': controlestado.text = "DISPONIBLE",
-                        'totalpagar': controltotalpagar == 0,
+                        'alimento': controlAlimento.text,
+                        'valoralimento': controlValorAlimento.text,
+                        'cantidadProducto': controlCantidadProducto.text,
+                        'foto': controlFoto.text,
+                        'estado': controlEstado.text = "DISPONIBLE",
+                        'totalpagar': controlTotalPagar == 0,
                       };
 
-                      PeticionesProducto.crearProducto(cliente);
+                      PeticionesProducto.crearProducto(producto);
 
                       Navigator.push(
                           context,

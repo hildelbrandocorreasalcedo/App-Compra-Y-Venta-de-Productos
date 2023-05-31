@@ -38,7 +38,7 @@ class _inicioClienteState extends State<inicioCliente> {
       home: Scaffold(
         appBar: AppBar(
             title: Text(
-              'Flast Food',
+              'Fast Food',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 30,

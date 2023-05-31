@@ -133,34 +133,6 @@ class VistaParqueos extends StatelessWidget {
 }
 /////////////////////////////////////////////////////////
 
-/*class Vista extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(),
-    );
-  }
-}*/
-
-/*class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: SwipeList()));
-  }
-}*/
-
-/*class SwipeList extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return ListItemWidget();
-  }
-}*/
-
 class ListItemWidget extends StatelessWidget {
   final List productos;
 
@@ -182,11 +154,6 @@ class ListItemWidget extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          /*onDismissed: (direction) {
-            setState(() {
-              items.removeAt(index);
-            });
-          },*/
           direction: DismissDirection.endToStart,
           child: Card(
             elevation: 5,

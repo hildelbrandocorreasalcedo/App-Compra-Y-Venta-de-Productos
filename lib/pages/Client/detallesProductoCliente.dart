@@ -9,10 +9,6 @@ class detallesProductoCliente extends StatefulWidget {
   final List perfil;
   detallesProductoCliente({required this.perfil, this.pos, this.iddoc});
 
-  /*final idperfil;
-  final List<dynamic> perfil;
-  RetirarVehiculo({required this.perfil, this.idperfil});*/
-
   @override
   _detallesProductoClienteState createState() =>
       _detallesProductoClienteState();
@@ -45,39 +41,13 @@ class _detallesProductoClienteState extends State<detallesProductoCliente> {
     super.initState();
   }
 
-  int _counter = 1;
-  void _incrementarCantidad() {
-    setState(() {
-      int cantidad = int.parse(controlCantidadProducto.text);
-      if (_counter < cantidad) {
-        _counter++;
-        print(_counter);
-      } else {
-        setState(() {});
-      }
-    });
-  }
-
-  void _decrementarCantidad() {
-    setState(() {
-      int cantidad = int.parse(controlCantidadProducto.text);
-
-      if ((_counter > 1) && (0 < cantidad)) {
-        _counter--;
-        print(_counter);
-      } else {
-        setState(() {});
-      }
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
           title: Text(
-            'Flast Food',
+            'Fast Food',
             style: TextStyle(
               color: Colors.white,
               fontSize: 30,
@@ -341,7 +311,7 @@ class _detallesProductoClienteState extends State<detallesProductoCliente> {
                   style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontFamily: 'Prompt',
                   ),
                 ),
@@ -388,5 +358,31 @@ class _detallesProductoClienteState extends State<detallesProductoCliente> {
       controlCantidadProducto.text =
           (int.parse(controlCantidadProducto.text) - _counter).toString();
     }
+  }
+
+  int _counter = 1;
+  void _incrementarCantidad() {
+    setState(() {
+      int cantidad = int.parse(controlCantidadProducto.text);
+      if (_counter < cantidad) {
+        _counter++;
+        print(_counter);
+      } else {
+        setState(() {});
+      }
+    });
+  }
+
+  void _decrementarCantidad() {
+    setState(() {
+      int cantidad = int.parse(controlCantidadProducto.text);
+
+      if ((_counter > 1) && (0 < cantidad)) {
+        _counter--;
+        print(_counter);
+      } else {
+        setState(() {});
+      }
+    });
   }
 }

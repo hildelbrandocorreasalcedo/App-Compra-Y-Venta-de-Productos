@@ -20,7 +20,6 @@ class _inicioAdminState extends State<inicioAdmin> {
     AgregarProducto(),
     ListaProductos(),
     //ConsultaFinacieraDia(),
-    //ListarTotalParqueos(),
     //ConsultaFinacieraDia(),
   ];
 
@@ -42,7 +41,7 @@ class _inicioAdminState extends State<inicioAdmin> {
       home: Scaffold(
         appBar: AppBar(
             title: Text(
-              'Flast Food',
+              'Fast Food',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 30,
